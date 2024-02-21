@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --color-primary: #000000;
+    --color-seconde: #0B60B0;
+    --color-tertiary: #F0EDCF;
+    --hover-color: #40A2D8;
+    
+    --first-font: 'Krona One', sans-serif;
+    --second-font:'Montserrat', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color:var(--color-primary);
+    color: var(--color-tertiary);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family:var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-seconde);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--first-font);
+}
+
+.first-text {
+    color: var(--color-seconde);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--second-font);
+}
+
+.apresentacao__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__buttons__title {
+    font-family: var(--first-font);
+    font-weight:400;
+    font-size: 1.5rem;
+}
+
+.buttons {
+    /* background-color:#9E2F2F; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--color-seconde);
+    width: 50%;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0px ;
+    text-decoration: none;
+    color: var(--color-seconde);
+    font-family: var(--second-font);
+}
+
+.buttons:hover{
+    background-color: var(--hover-color);
+}
+
+.rodape {
+    color: var(--color-primary);
+    background-color: var(--color-seconde);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+}
+
+@media (max-width: 1300px) {
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    
+}
