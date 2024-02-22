@@ -34,7 +34,7 @@ body {
 
 .cabecalho__menu__link {
     font-family:var(--second-font);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--color-seconde);
     text-decoration: none;
@@ -55,7 +55,7 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 2.25rem;
+    font-size: 2.15rem;
     font-family: var(--first-font);
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--second-font);
 }
 
@@ -78,7 +78,7 @@ body {
 .apresentacao__buttons__title {
     font-family: var(--first-font);
     font-weight:400;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .buttons {
@@ -90,7 +90,7 @@ body {
     width: 50%;
     text-align: center;
     border-radius: 16px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     padding: 21.5px 0px ;
     text-decoration: none;
@@ -105,15 +105,34 @@ body {
 .rodape {
     color: var(--color-primary);
     background-color: var(--color-seconde);
-    padding: 24px;
+    padding-top: 10px;
     text-align: center;
     font-family: var(--second-font);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
     position: relative;
-    bottom: 0;
-    /* width: 100%; */
+    bottom: -15px;
 }
+
+#carouselExampleFade {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+
+}
+
+.carousel_image{
+    display: flex;
+    justify-content: center;
+}
+
+.carosel__image {
+    width: 900px;
+    height: 600px;
+}
+
+
 
 @media (max-width: 1300px) {
     .cabecalho{
@@ -130,4 +149,8 @@ body {
         width: auto;
     }
     
+    .carosel__image {
+        width: 450px;
+        height: 300px;
+    }
 }
